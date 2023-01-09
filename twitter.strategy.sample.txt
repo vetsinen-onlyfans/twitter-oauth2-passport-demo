@@ -1,0 +1,28 @@
+Strategy {
+  name: 'twitter',
+  _verify: [Function (anonymous)],
+  _oauth2: {
+    _clientId: 'Z3lZMlFzMHZocnIwbmtZc001Zmo6MTpjaQ',
+    _clientSecret: '9E2rUQlpQKuVwKAWpnLcJb53IxjSfhQiZA9sHYwfmB4yOFya1u',
+    _baseSite: '',
+    _authorizeUrl: 'https://twitter.com/i/oauth2/authorize',
+    _accessTokenUrl: 'https://api.twitter.com/2/oauth2/token',
+    _accessTokenName: 'access_token',
+    _authMethod: 'Bearer',
+    _customHeaders: {
+      Authorization: 'Basic WjNsWk1sRnpNSFpvY25Jd2JtdFpjMDAxWm1vNk1UcGphUTo5RTJyVVFscFFLdVZ3S0FXcG5MY0piNTNJeGpTZmhRaVpBOXNIWXdmbUI0eU9GeWExdQ=='
+    },
+    _useAuthorizationHeaderForGET: false,
+    _agent: undefined
+  },
+  _callbackURL: 'http://127.0.0.1:3000/social/callback/twitter',
+  _scope: undefined,
+  _scopeSeparator: ' ',
+  _pkceMethod: 'S256',
+  _key: 'oauth:twitter',
+  _stateStore: PKCESessionStore { _key: 'oauth:twitter' },
+  _trustProxy: undefined,
+  _passReqToCallback: undefined,
+  _skipUserProfile: false,
+  _userProfileURL: 'https://api.twitter.com/2/users/me?user.fields=profile_image_url,url'
+}
