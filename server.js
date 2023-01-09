@@ -15,8 +15,7 @@ passport.deserializeUser(function (obj, done) {
 const callbackURL =  `${process.env.BASE_URL}/social/callback/twitter`
 console.log(callbackURL)
 // Use the Twitter OAuth2 strategy within Passport
-passport.use(
-    // <2> Strategy initialization
+const twitterStrategy =     // <2> Strategy initialization
     new Strategy(
         {
             clientID: process.env.TWITTER_CLIENT_ID,
@@ -30,7 +29,9 @@ passport.use(
             return done(null, profile);
         }
     )
-);
+
+console.dir(twitterStrategy)
+passport.use(twitterStrategy);
 
 const app = express();
 
